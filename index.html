@@ -8,36 +8,40 @@
 </head>
 <body>
   <h1>User Details Form</h1>
-  <form id="userForm">
-    <label>Full Name:</label>
-    <input type="text" id="fullName" placeholder="Enter your full name">
+  
+  <div class="container">
+    <form id="userForm">
+      <label>Full Name:</label>
+      <input type="text" id="fullName" placeholder="Enter your full name">
 
-    <label>Email Address:</label>
-    <input type="email" id="email" placeholder="Enter your email">
+      <label>Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email">
 
-    <label>Phone Number:</label>
-    <input type="tel" id="phone" placeholder="e.g. +254700000000">
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" placeholder="e.g. +254700000000">
 
-    <label>Gender:</label>
-    <select id="gender">
-      <option value="">Select Gender</option>
-      <option>Male</option>
-      <option>Female</option>
-      <option>Other</option>
-    </select>
+      <label>Gender:</label>
+      <select id="gender">
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
 
-    <label>Comments:</label>
-    <textarea id="comments" rows="4" placeholder="Enter comments"></textarea>
+      <label>Comments:</label>
+      <textarea id="comments" rows="4" placeholder="Enter comments"></textarea>
 
-    <button type="button" onclick="validateForm()">Submit</button>
-  </form>
+      <button type="button" onclick="validateForm()">Submit</button>
+      <div id="successMessage"></div>
+    </form>
 
-  <div id="successMessage"></div>
-  <div id="displayData"></div>
+    <div id="displayData">
+      <h3>Submitted Data:</h3>
+      <p>No data submitted yet.</p>
+    </div>
+  </div>
 
-  <footer>
-    © Timothy Yator 22/05730
-  </footer>
+  <footer>© Timothy Yator 22/05730</footer>
 
   <script>
   function validateForm() {
