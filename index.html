@@ -47,6 +47,7 @@
     const gender = document.getElementById("gender").value;
     const comments = document.getElementById("comments").value.trim();
 
+
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     if (!name || !email || !phone || !gender || !comments) {
@@ -54,6 +55,7 @@
       return;
     }
 
+     //this is for the email format checking
     if (!email.match(emailPattern)) {
       alert("Please enter a valid email address.");
       return;
